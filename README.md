@@ -215,7 +215,7 @@ http://localhost:8080/students
 
 ### 📋 View Students
 
-![View Students](docs/screenshots/FinalPage.png)
+![View Students ](https://raw.githubusercontent.com/JYOTHIkudipudi/StudentManagementSystem/main/docs/screenshots/FinalPage.png)
 
 ### ✏️ Update Student
 
