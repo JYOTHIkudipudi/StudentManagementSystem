@@ -1,5 +1,11 @@
 
-## 🎓 Student Management System (Spring Boot + MySQL)
+# 🎓 Student Management System (Spring Boot + MySQL)
+
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
+![Maven](https://img.shields.io/badge/Build-Maven-yellow)
+![IDE](https://img.shields.io/badge/IDE-Eclipse-purple)
 
 A full-stack **Spring Boot + Thymeleaf** web application for managing student records.  
 This project was built in **Eclipse IDE** with Maven and integrated with **MySQL database**.  
@@ -43,7 +49,7 @@ StudentManagementSystem/
 │   │   │   ├── StudentsManagementSystemApplication.java   # Main entry point
 │   │   │   ├── controller/                                # Controllers (HomeController.java)
 │   │   │   ├── entity/                                    # Entity classes (Student.java)
-│   │   │   ├── repository/                                # Repository interfaces (Studentrepository.java)
+│   │   │   ├── repository/                                # Repository interfaces (StudentRepository.java)
 │   │   │   ├── services/                                  # Service interfaces
 │   │   │   ├── serviceImpl/                               # Service implementations
 │   │   └── resources/
@@ -51,14 +57,13 @@ StudentManagementSystem/
 │   │       └── application.properties                     # DB configuration
 │   └── test/                                              # Unit tests
 │── pom.xml                        # Maven dependencies
-│── mvnw, mvnw\.cmd                 # Maven wrapper scripts
-│── .gitignore, .gitattributes     # Git configuration
-│── README.md                      # Project documentation
+│── mvnw, mvnw\.cmd                  # Maven wrapper scripts
+│── .gitignore, .gitattributes      # Git configuration
+│── README.md                       # Project documentation
 
 ````
 
 ---
-
 
 ## 📦 Maven Dependencies (`pom.xml`)
 
@@ -105,29 +110,31 @@ Key dependencies used:
         <scope>test</scope>
     </dependency>
 </dependencies>
-```
+````
 
 ---
- **Clone the repository**
 
-   ```bash
-   git clone https://github.com/JYOTHIkudipudi/StudentManagementSystem.git
-   cd StudentManagementSystem
-   ```
- **Open in Eclipse**
+## 🚀 Getting Started
 
-   * File → Import → Existing Maven Project → Select the folder.
+### 1️⃣ Clone the repository
 
+```bash
+git clone https://github.com/JYOTHIkudipudi/StudentManagementSystem.git
+cd StudentManagementSystem
+```
+
+### 2️⃣ Open in Eclipse
+
+* File → Import → Existing Maven Project → Select the folder.
+
+---
 
 ## ⚙️ Configure MySQL
 
-###  Update `application.properties`
-
-In `src/main/resources/application.properties`:
+### Update `application.properties`
 
 ```properties
 spring.application.name=StudentsManagementSystem
-
 spring.datasource.url=jdbc:mysql://localhost:3306/Students
 spring.datasource.username=root
 spring.datasource.password=yourpassword
@@ -136,19 +143,11 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-````
+```
 
 ---
 
-###  Setup Database in MySQL
-
-Open the MySQL command line:
-
-```sql
-mysql -u root -p
-```
-
-Create the database and table:
+### Setup Database in MySQL
 
 ```sql
 CREATE DATABASE Students;
@@ -160,16 +159,11 @@ CREATE TABLE student (
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL
 );
-```
 
-Insert sample records:
-
-```sql
-INSERT INTO student (first_name, last_name, email)
-VALUES
+INSERT INTO student (first_name, last_name, email) VALUES
 ('Jyothi', 'Kudipudi', 'jyothi@example.com'),
-('Sita', 'Reddy', 'sita.reddy@example.com'),
-('Ravi', 'Kumar', 'ravi.kumar@example.com');
+('Kumari', 'saila', 'saila234@example.com'),
+('Naveen', 'Khan', 'Naveen0099@example.com');
 ```
 
 Verify:
@@ -180,56 +174,42 @@ SELECT * FROM student;
 
 ---
 
-###  Run the Project
+## ▶️ Run the Project
 
-* **From Eclipse:**
-  Right-click `StudentsManagementSystemApplication.java` → **Run As → Java Application**
+**From Eclipse:**
+Right-click `StudentsManagementSystemApplication.java` → **Run As → Java Application**
 
-* **From Terminal:**
+**From Terminal:**
 
-  ```bash
-  mvn spring-boot:run
-  ```
+```bash
+mvn spring-boot:run
+```
 
 ---
 
-###  Access in Browser
+## 🌍 Access in Browser
 
 ```bash
 http://localhost:8080/students
 ```
-
-```
-
-
-
 ## 📸 Screenshots
 
+1. 🏠 Home Page
+
+   <img src="docs/screenshots/HomePage.png" width="600">
+
+2. ➕ Create Student
+
+   <img src="docs/screenshots/CreatePage.png" width="600">
+
+3. ✏️ Update Student
+
+   <img src="docs/screenshots/Updatepage.png" width="600">
+
+4. 📖 Final Page
+
+   <img src="docs/screenshots/FinalPage.png" width="600">
 
 
-### 🏠 Home Page
-![Home Page](docs/screenshots/HomePage.png)
 
-### ➕ Add Student
-![Add Student](docs/screenshots/CreatePage.png)
-
-### 📖 View Students
-![View Students](docs/screenshots/FinalPage.png)
-
-### ✏️ Update Student
-![Edit Student](docs/screenshots/UpdatePage.png)
-
-
-### ❌ Delete Student
-
-
-
----
-
-## 👩‍💻 Author
-
-**Jyothi Kudipudi**
-
-
----
 
