@@ -212,7 +212,7 @@ http://localhost:8080/students
 
 ### ➕ Add Student
 
-![Add Student](docs/screenshots/CreatePage.png)
+![Add Student](https://github.com/JYOTHIkudipudi/StudentManagementSystem/blob/1287dcbf9be8061b05dc1d8b883d7d38b2448303/docs/screenshots/CreatePage.png)
 
 ### 📋 View Students
 
