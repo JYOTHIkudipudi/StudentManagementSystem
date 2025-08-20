@@ -205,22 +205,20 @@ http://localhost:8080/students
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
 
+
+### 🏠 Home Page
 ![Home Page](docs/screenshots/HomePage.png)
 
-
 ### ➕ Add Student
+![Add Student](docs/screenshots/CreatePage.png)
 
-![Add Student](https://github.com/JYOTHIkudipudi/StudentManagementSystem/blob/1287dcbf9be8061b05dc1d8b883d7d38b2448303/docs/screenshots/CreatePage.png)
-
-### 📋 View Students
-
-![View Students ](https://raw.githubusercontent.com/JYOTHIkudipudi/StudentManagementSystem/main/docs/screenshots/FinalPage.png)
+### 📖 View Students
+![View Students](docs/screenshots/FinalPage.png)
 
 ### ✏️ Update Student
-
 ![Edit Student](docs/screenshots/UpdatePage.png)
+
 
 ### ❌ Delete Student
 
